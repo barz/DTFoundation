@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>UIView(DTFoundation) Category Reference</title>
+		<title>DTDownloadDelegate Protocol Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">UIView(DTFoundation) Category Reference</h1>
+				<h1 class="hideInXcode">DTDownloadDelegate Protocol Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -44,13 +44,15 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/addShadowWithColor:alpha:radius:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- addShadowWithColor:alpha:radius:offset:</option>
+	<option value="//api/name/download:didFailWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- download:didFailWithError:</option>
 	
-	<option value="//api/name/setRoundedCornersWithRadius:width:color:">&nbsp;&nbsp;&nbsp;&nbsp;- setRoundedCornersWithRadius:width:color:</option>
+	<option value="//api/name/download:didFinishWithFile:">&nbsp;&nbsp;&nbsp;&nbsp;- download:didFinishWithFile:</option>
 	
-	<option value="//api/name/snapshotImage">&nbsp;&nbsp;&nbsp;&nbsp;- snapshotImage</option>
+	<option value="//api/name/download:downloadedBytes:ofTotalBytes:withSpeed:">&nbsp;&nbsp;&nbsp;&nbsp;- download:downloadedBytes:ofTotalBytes:withSpeed:</option>
 	
-	<option value="//api/name/updateShadowPathToBounds:withDuration:">&nbsp;&nbsp;&nbsp;&nbsp;- updateShadowPathToBounds:withDuration:</option>
+	<option value="//api/name/downloadDidFinishHEAD:">&nbsp;&nbsp;&nbsp;&nbsp;- downloadDidFinishHEAD:</option>
+	
+	<option value="//api/name/shouldResumeDownload:">&nbsp;&nbsp;&nbsp;&nbsp;- shouldResumeDownload:</option>
 	
 	
 	
@@ -68,12 +70,6 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting Snapshot Images">Getting Snapshot Images</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Rounded Corners">Rounded Corners</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Shadows">Shadows</a></span></li>
-	
 </ul></li>
 
 
@@ -86,13 +82,15 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addShadowWithColor:alpha:radius:offset:">addShadowWithColor:alpha:radius:offset:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/download:didFailWithError:">download:didFailWithError:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setRoundedCornersWithRadius:width:color:">setRoundedCornersWithRadius:width:color:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/download:didFinishWithFile:">download:didFinishWithFile:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/snapshotImage">snapshotImage</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/download:downloadedBytes:ofTotalBytes:withSpeed:">download:downloadedBytes:ofTotalBytes:withSpeed:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateShadowPathToBounds:withDuration:">updateShadowPathToBounds:withDuration:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadDidFinishHEAD:">downloadDidFinishHEAD:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldResumeDownload:">shouldResumeDownload:</a></span></li>
 	
 </ul></li>
 
@@ -101,7 +99,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="UIView(DTFoundation) Category Reference" name="top"></a>
+				<a title="DTDownloadDelegate Protocol Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -110,15 +108,18 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">UIView(DTFoundation) Category Reference</h1>
+						<h1 class="title title-header">DTDownloadDelegate Protocol Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">UIView+DTFoundation.h</td>
+	<td class="specification-value">DTDownload.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -128,7 +129,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>DTFoundation enhancements for <code>UIView</code></p>
+						<p>Methods that a delegate of a download object is being queried with.</p>
 					</div>
 					
 					
@@ -140,51 +141,42 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						<a title="Getting Snapshot Images" name="task_Getting Snapshot Images"></a>
-						<h3 class="subsubtitle task-title">Getting Snapshot Images</h3>
+						
+						
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/snapshotImage">&ndash;&nbsp;snapshotImage</a></code>
-		<span class="tooltip"><p>Creates a snapshot of the receiver.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						<a title="Rounded Corners" name="task_Rounded Corners"></a>
-						<h3 class="subsubtitle task-title">Rounded Corners</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/setRoundedCornersWithRadius:width:color:">&ndash;&nbsp;setRoundedCornersWithRadius:width:color:</a></code>
-		<span class="tooltip"><p>Sets the corner attributes of the receiver&rsquo;s layer.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						<a title="Shadows" name="task_Shadows"></a>
-						<h3 class="subsubtitle task-title">Shadows</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/addShadowWithColor:alpha:radius:offset:">&ndash;&nbsp;addShadowWithColor:alpha:radius:offset:</a></code>
-		<span class="tooltip"><p>Adds a layer-based shadow to the receiver.</p></span>
+		<code><a href="#//api/name/shouldResumeDownload:">&ndash;&nbsp;shouldResumeDownload:</a></code>
+		<span class="tooltip"><p>Sent by the download object to the delegate to inquire if a download that can be resumed should continue. Return <code>NO</code> if the download should start from the beginning.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/updateShadowPathToBounds:withDuration:">&ndash;&nbsp;updateShadowPathToBounds:withDuration:</a></code>
-		<span class="tooltip"><p>sets the shadow path to fit the receiver&rsquo;s bounds.</p></span>
+		<code><a href="#//api/name/download:downloadedBytes:ofTotalBytes:withSpeed:">&ndash;&nbsp;download:downloadedBytes:ofTotalBytes:withSpeed:</a></code>
+		<span class="tooltip"><p>Sent by the download object to inform the delegate about its progress.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/downloadDidFinishHEAD:">&ndash;&nbsp;downloadDidFinishHEAD:</a></code>
+		<span class="tooltip"><p>Sent by the download object to the delegate when only a HEAD was requested and the request is done.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/download:didFailWithError:">&ndash;&nbsp;download:didFailWithError:</a></code>
+		<span class="tooltip"><p>Sent by the download object to the delegate when the download was been aborted due to failure.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/download:didFinishWithFile:">&ndash;&nbsp;download:didFinishWithFile:</a></code>
+		<span class="tooltip"><p>Sent by the download object to the delegate when the download as completed successfully.</p></span>
 	</span>
 	
 	
@@ -206,40 +198,30 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/addShadowWithColor:alpha:radius:offset:" title="addShadowWithColor:alpha:radius:offset:"></a>
-	<h3 class="subsubtitle method-title">addShadowWithColor:alpha:radius:offset:</h3>
+	<a name="//api/name/download:didFailWithError:" title="download:didFailWithError:"></a>
+	<h3 class="subsubtitle method-title">download:didFailWithError:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Adds a layer-based shadow to the receiver.</p>
+		<p>Sent by the download object to the delegate when the download was been aborted due to failure.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)addShadowWithColor:(UIColor *)<em>color</em> alpha:(CGFloat)<em>alpha</em> radius:(CGFloat)<em>radius</em> offset:(CGSize)<em>offset</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)download:(DTDownload *)<em>download</em> didFailWithError:(NSError *)<em>error</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>color</em></dt>
-			<dd><p>The shadow color. Can be <code>nil</code> for default black.</p></dd>
+			<dt><em>download</em></dt>
+			<dd><p>A download object.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>alpha</em></dt>
-			<dd><p>The alpha value of the shadow.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>radius</em></dt>
-			<dd><p>The amount that the shadow is blurred.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>offset</em></dt>
-			<dd><p>The offset of the shadow</p></dd>
+			<dt><em>error</em></dt>
+			<dd><p>An error object that contains information about what caused the failure.</p></dd>
 		</dl>
 		
 	</div>
@@ -250,116 +232,50 @@
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The advantage of using this method is that you do not need to import the QuartzCore headers just for adding the shadow.
-Layer-based shadows are properly combined for views that are on the same superview. This does not add a shadow path,
-you should call updateShadowPathToBounds whenever the receiver&rsquo;s bounds change and also after setting the initial frame.
-@warn Disables clipping to bounds because this would also clip off the shadow.</p>
-	</div>
 	
 	
 	
-	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="#//api/name/updateShadowPathToBounds:withDuration:">&ndash; updateShadowPathToBounds:withDuration:</a></p></code></li>
-			
-		</ul>
-	</div>
 	
 	
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">UIView+DTFoundation.h</code><br />
+		<code class="declared-in-ref">DTDownload.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/setRoundedCornersWithRadius:width:color:" title="setRoundedCornersWithRadius:width:color:"></a>
-	<h3 class="subsubtitle method-title">setRoundedCornersWithRadius:width:color:</h3>
+	<a name="//api/name/download:didFinishWithFile:" title="download:didFinishWithFile:"></a>
+	<h3 class="subsubtitle method-title">download:didFinishWithFile:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Sets the corner attributes of the receiver&rsquo;s layer.</p>
+		<p>Sent by the download object to the delegate when the download as completed successfully.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)setRoundedCornersWithRadius:(CGFloat)<em>radius</em> width:(CGFloat)<em>width</em> color:(UIColor *)<em>color</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)download:(DTDownload *)<em>download</em> didFinishWithFile:(NSString *)<em>path</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>radius</em></dt>
-			<dd><p>The corner radius.</p></dd>
+			<dt><em>download</em></dt>
+			<dd><p>A download object.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>width</em></dt>
-			<dd><p>The width of the border line.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>color</em></dt>
-			<dd><p>The color to be used for the border line. Can be <code>nil</code> to leave it unchanged.</p></dd>
+			<dt><em>path</em></dt>
+			<dd><p>The file path to the downloaded file</p></dd>
 		</dl>
 		
 	</div>
 	
 	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The advantage of using this method is that you do not need to import the QuartzCore headers just for setting the corners.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">UIView+DTFoundation.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/snapshotImage" title="snapshotImage"></a>
-	<h3 class="subsubtitle method-title">snapshotImage</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Creates a snapshot of the receiver.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (UIImage *)snapshotImage</code></div>
-	
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Returns a bitmap image with the same contents and dimensions as the receiver.</p>
-	</div>
 	
 	
 	
@@ -373,37 +289,47 @@ you should call updateShadowPathToBounds whenever the receiver&rsquo;s bounds ch
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">UIView+DTFoundation.h</code><br />
+		<code class="declared-in-ref">DTDownload.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/updateShadowPathToBounds:withDuration:" title="updateShadowPathToBounds:withDuration:"></a>
-	<h3 class="subsubtitle method-title">updateShadowPathToBounds:withDuration:</h3>
+	<a name="//api/name/download:downloadedBytes:ofTotalBytes:withSpeed:" title="download:downloadedBytes:ofTotalBytes:withSpeed:"></a>
+	<h3 class="subsubtitle method-title">download:downloadedBytes:ofTotalBytes:withSpeed:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>sets the shadow path to fit the receiver&rsquo;s bounds.</p>
+		<p>Sent by the download object to inform the delegate about its progress.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)updateShadowPathToBounds:(CGRect)<em>bounds</em> withDuration:(NSTimeInterval)<em>duration</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)download:(DTDownload *)<em>download</em> downloadedBytes:(long long)<em>downloadedBytes</em> ofTotalBytes:(long long)<em>totalBytes</em> withSpeed:(float)<em>speed</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>bounds</em></dt>
-			<dd><p>The new bounds of the shadow path</p></dd>
+			<dt><em>download</em></dt>
+			<dd><p>A download object.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>duration</em></dt>
-			<dd><p>The animation duration. Specify a duration of 0 to not do an animation</p></dd>
+			<dt><em>downloadedBytes</em></dt>
+			<dd><p>The number of bytes that were downloaded so far.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>totalBytes</em></dt>
+			<dd><p>The number of total bytes to be downloaded.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>speed</em></dt>
+			<dd><p>A rough estimate of the current download speed.</p></dd>
 		</dl>
 		
 	</div>
@@ -413,12 +339,6 @@ you should call updateShadowPathToBounds whenever the receiver&rsquo;s bounds ch
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>This should be called whenever the receiver&rsquo;s bounds change, or else the shadow detaches.
-@warn Since this a CALayer property it needs to be explicitly animated, for example in the willRotate &hellip; method of a <code>UIViewController</code>.</p>
-	</div>
 	
 	
 	
@@ -428,7 +348,95 @@ you should call updateShadowPathToBounds whenever the receiver&rsquo;s bounds ch
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">UIView+DTFoundation.h</code><br />
+		<code class="declared-in-ref">DTDownload.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/downloadDidFinishHEAD:" title="downloadDidFinishHEAD:"></a>
+	<h3 class="subsubtitle method-title">downloadDidFinishHEAD:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent by the download object to the delegate when only a HEAD was requested and the request is done.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)downloadDidFinishHEAD:(DTDownload *)<em>download</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>download</em></dt>
+			<dd><p>A download object.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTDownload.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldResumeDownload:" title="shouldResumeDownload:"></a>
+	<h3 class="subsubtitle method-title">shouldResumeDownload:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent by the download object to the delegate to inquire if a download that can be resumed should continue. Return <code>NO</code> if the download should start from the beginning.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldResumeDownload:(DTDownload *)<em>download</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>download</em></dt>
+			<dd><p>A download object.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTDownload.h</code><br />
 	</div>				
 	
 	

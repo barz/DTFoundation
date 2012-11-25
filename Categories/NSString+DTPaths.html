@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.0.5 (build 752)" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -53,6 +53,13 @@
 	
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/pathByDeletingSequenceNumber">&nbsp;&nbsp;&nbsp;&nbsp;- pathByDeletingSequenceNumber</option>
+	
+	<option value="//api/name/pathByIncrementingSequenceNumber">&nbsp;&nbsp;&nbsp;&nbsp;- pathByIncrementingSequenceNumber</option>
+	
+	
 	
 </select>
 				</li>
@@ -71,6 +78,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting Standard Paths">Getting Standard Paths</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting Temporary Paths">Getting Temporary Paths</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with Paths">Working with Paths</a></span></li>
 	
 </ul></li>
 
@@ -93,6 +102,14 @@
 </ul></li>
 
 
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathByDeletingSequenceNumber">pathByDeletingSequenceNumber</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pathByIncrementingSequenceNumber">pathByIncrementingSequenceNumber</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -175,6 +192,28 @@
 	<span class="tooltip">
 		<code><a href="#//api/name/pathForTemporaryFile">+&nbsp;pathForTemporaryFile</a></code>
 		<span class="tooltip"><p>Creates a unique filename that can be used for one temporary file or folder.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Working with Paths" name="task_Working with Paths"></a>
+						<h3 class="subsubtitle task-title">Working with Paths</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pathByIncrementingSequenceNumber">&ndash;&nbsp;pathByIncrementingSequenceNumber</a></code>
+		<span class="tooltip"><p>Appends or Increments a sequence number in brackets</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pathByDeletingSequenceNumber">&ndash;&nbsp;pathByDeletingSequenceNumber</a></code>
+		<span class="tooltip"><p>Removes a sequence number in brackets</p></span>
 	</span>
 	
 	
@@ -373,6 +412,100 @@
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/pathByDeletingSequenceNumber" title="pathByDeletingSequenceNumber"></a>
+	<h3 class="subsubtitle method-title">pathByDeletingSequenceNumber</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes a sequence number in brackets</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)pathByDeletingSequenceNumber</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The modified path</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If the receiver number suffix then it is removed. If not the receiver is returned.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+DTPaths.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pathByIncrementingSequenceNumber" title="pathByIncrementingSequenceNumber"></a>
+	<h3 class="subsubtitle method-title">pathByIncrementingSequenceNumber</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Appends or Increments a sequence number in brackets</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)pathByIncrementingSequenceNumber</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The incremented path</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If the receiver already has a number suffix then it is incremented. If not then (1) is added.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSString+DTPaths.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
 					
 				</div>
 				<div class="main-navigation navigation-bottom">
@@ -384,9 +517,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Cocoanetics. All rights reserved. (Last updated: 2012-03-06)</span><br />
+						<p><span class="copyright">&copy; 2012 Cocoanetics. All rights reserved. (Last updated: 2012-11-25)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						
 					</div>
 				</div>

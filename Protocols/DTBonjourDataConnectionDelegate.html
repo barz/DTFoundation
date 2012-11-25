@@ -1,0 +1,735 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>DTBonjourDataConnectionDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">DTFoundation </a></h1>
+				<a id="developerHome" href="../index.html">Cocoanetics</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">DTBonjourDataConnectionDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/connection:didFinishReceivingChunk:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:didFinishReceivingChunk:</option>
+	
+	<option value="//api/name/connection:didFinishSendingChunk:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:didFinishSendingChunk:</option>
+	
+	<option value="//api/name/connection:didReceiveBytes:ofChunk:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:didReceiveBytes:ofChunk:</option>
+	
+	<option value="//api/name/connection:didReceiveObject:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:didReceiveObject:</option>
+	
+	<option value="//api/name/connection:didSendBytes:ofChunk:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:didSendBytes:ofChunk:</option>
+	
+	<option value="//api/name/connection:willStartReceivingChunk:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:willStartReceivingChunk:</option>
+	
+	<option value="//api/name/connection:willStartSendingChunk:">&nbsp;&nbsp;&nbsp;&nbsp;- connection:willStartSendingChunk:</option>
+	
+	<option value="//api/name/connectionDidClose:">&nbsp;&nbsp;&nbsp;&nbsp;- connectionDidClose:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:didFinishReceivingChunk:">connection:didFinishReceivingChunk:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:didFinishSendingChunk:">connection:didFinishSendingChunk:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:didReceiveBytes:ofChunk:">connection:didReceiveBytes:ofChunk:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:didReceiveObject:">connection:didReceiveObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:didSendBytes:ofChunk:">connection:didSendBytes:ofChunk:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:willStartReceivingChunk:">connection:willStartReceivingChunk:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connection:willStartSendingChunk:">connection:willStartSendingChunk:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionDidClose:">connectionDidClose:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="DTBonjourDataConnectionDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">DTBonjourDataConnectionDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">DTBonjourDataConnection.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Type of encoding to use for sending objects</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:willStartSendingChunk:">&ndash;&nbsp;connection:willStartSendingChunk:</a></code>
+		<span class="tooltip"><p>Called before the connection will start sending a data chunk</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:didSendBytes:ofChunk:">&ndash;&nbsp;connection:didSendBytes:ofChunk:</a></code>
+		<span class="tooltip"><p>Called multiple times while the the connection is sending a data chunk</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:didFinishSendingChunk:">&ndash;&nbsp;connection:didFinishSendingChunk:</a></code>
+		<span class="tooltip"><p>Called after the connection did finish sending a data chunk</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:willStartReceivingChunk:">&ndash;&nbsp;connection:willStartReceivingChunk:</a></code>
+		<span class="tooltip"><p>Called before the connection will start receiving a data chunk</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:didReceiveBytes:ofChunk:">&ndash;&nbsp;connection:didReceiveBytes:ofChunk:</a></code>
+		<span class="tooltip"><p>Called multiple times while the the connection is receiving a data chunk</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:didFinishReceivingChunk:">&ndash;&nbsp;connection:didFinishReceivingChunk:</a></code>
+		<span class="tooltip"><p>Called after the connection did finish receiving a data chunk</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connection:didReceiveObject:">&ndash;&nbsp;connection:didReceiveObject:</a></code>
+		<span class="tooltip"><p>Called when the connection did received and decode an object</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionDidClose:">&ndash;&nbsp;connectionDidClose:</a></code>
+		<span class="tooltip"><p>Called when the connection was closed</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:didFinishReceivingChunk:" title="connection:didFinishReceivingChunk:"></a>
+	<h3 class="subsubtitle method-title">connection:didFinishReceivingChunk:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called after the connection did finish receiving a data chunk</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)connection:(DTBonjourDataConnection *)<em>connection</em> didFinishReceivingChunk:(DTBonjourDataChunk *)<em>chunk</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>connection</em></dt>
+			<dd><p>The connection</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chunk</em></dt>
+			<dd><p>The chunk</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTBonjourDataConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:didFinishSendingChunk:" title="connection:didFinishSendingChunk:"></a>
+	<h3 class="subsubtitle method-title">connection:didFinishSendingChunk:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called after the connection did finish sending a data chunk</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)connection:(DTBonjourDataConnection *)<em>connection</em> didFinishSendingChunk:(DTBonjourDataChunk *)<em>chunk</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>connection</em></dt>
+			<dd><p>The connection</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chunk</em></dt>
+			<dd><p>The chunk</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTBonjourDataConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:didReceiveBytes:ofChunk:" title="connection:didReceiveBytes:ofChunk:"></a>
+	<h3 class="subsubtitle method-title">connection:didReceiveBytes:ofChunk:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called multiple times while the the connection is receiving a data chunk</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)connection:(DTBonjourDataConnection *)<em>connection</em> didReceiveBytes:(NSUInteger)<em>bytesReceived</em> ofChunk:(DTBonjourDataChunk *)<em>chunk</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>connection</em></dt>
+			<dd><p>The connection</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bytesReceived</em></dt>
+			<dd><p>The number of bytes received so far</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chunk</em></dt>
+			<dd><p>The chunk</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTBonjourDataConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:didReceiveObject:" title="connection:didReceiveObject:"></a>
+	<h3 class="subsubtitle method-title">connection:didReceiveObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the connection did received and decode an object</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)connection:(DTBonjourDataConnection *)<em>connection</em> didReceiveObject:(id)<em>object</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>connection</em></dt>
+			<dd><p>The connection</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>object</em></dt>
+			<dd><p>The decoded object that was received</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTBonjourDataConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:didSendBytes:ofChunk:" title="connection:didSendBytes:ofChunk:"></a>
+	<h3 class="subsubtitle method-title">connection:didSendBytes:ofChunk:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called multiple times while the the connection is sending a data chunk</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)connection:(DTBonjourDataConnection *)<em>connection</em> didSendBytes:(NSUInteger)<em>bytesSent</em> ofChunk:(DTBonjourDataChunk *)<em>chunk</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>connection</em></dt>
+			<dd><p>The connection</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bytesSent</em></dt>
+			<dd><p>The number of bytes sent so far</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chunk</em></dt>
+			<dd><p>The chunk</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTBonjourDataConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:willStartReceivingChunk:" title="connection:willStartReceivingChunk:"></a>
+	<h3 class="subsubtitle method-title">connection:willStartReceivingChunk:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called before the connection will start receiving a data chunk</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)connection:(DTBonjourDataConnection *)<em>connection</em> willStartReceivingChunk:(DTBonjourDataChunk *)<em>chunk</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>connection</em></dt>
+			<dd><p>The connection</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chunk</em></dt>
+			<dd><p>The chunk</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTBonjourDataConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connection:willStartSendingChunk:" title="connection:willStartSendingChunk:"></a>
+	<h3 class="subsubtitle method-title">connection:willStartSendingChunk:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called before the connection will start sending a data chunk</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)connection:(DTBonjourDataConnection *)<em>connection</em> willStartSendingChunk:(DTBonjourDataChunk *)<em>chunk</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>connection</em></dt>
+			<dd><p>The connection</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chunk</em></dt>
+			<dd><p>The chunk</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTBonjourDataConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionDidClose:" title="connectionDidClose:"></a>
+	<h3 class="subsubtitle method-title">connectionDidClose:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the connection was closed</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)connectionDidClose:(DTBonjourDataConnection *)<em>connection</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>connection</em></dt>
+			<dd><p>The connection</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTBonjourDataConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Cocoanetics. All rights reserved. (Last updated: 2012-11-25)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

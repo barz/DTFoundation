@@ -1,0 +1,640 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>UIImage(DTFoundation) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">DTFoundation </a></h1>
+				<a id="developerHome" href="../index.html">Cocoanetics</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">UIImage(DTFoundation) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/imageWithContentsOfURL:cachePolicy:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ imageWithContentsOfURL:cachePolicy:error:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/drawInRect:withContentMode:">&nbsp;&nbsp;&nbsp;&nbsp;- drawInRect:withContentMode:</option>
+	
+	<option value="//api/name/imageScaledToSize:">&nbsp;&nbsp;&nbsp;&nbsp;- imageScaledToSize:</option>
+	
+	<option value="//api/name/tileImageAtColumn:ofColumns:row:ofRows:">&nbsp;&nbsp;&nbsp;&nbsp;- tileImageAtColumn:ofColumns:row:ofRows:</option>
+	
+	<option value="//api/name/tileImageInClipRect:inBounds:scale:">&nbsp;&nbsp;&nbsp;&nbsp;- tileImageInClipRect:inBounds:scale:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Loading from RemoteURLs">Loading from RemoteURLs</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Drawing">Drawing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Working with Tiles">Working with Tiles</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Modifying Images">Modifying Images</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageWithContentsOfURL:cachePolicy:error:">imageWithContentsOfURL:cachePolicy:error:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/drawInRect:withContentMode:">drawInRect:withContentMode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/imageScaledToSize:">imageScaledToSize:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tileImageAtColumn:ofColumns:row:ofRows:">tileImageAtColumn:ofColumns:row:ofRows:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tileImageInClipRect:inBounds:scale:">tileImageInClipRect:inBounds:scale:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="UIImage(DTFoundation) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">UIImage(DTFoundation) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">UIImage+DTFoundation.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Methods to help with working with images.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Loading from RemoteURLs" name="task_Loading from RemoteURLs"></a>
+						<h3 class="subsubtitle task-title">Loading from RemoteURLs</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageWithContentsOfURL:cachePolicy:error:">+&nbsp;imageWithContentsOfURL:cachePolicy:error:</a></code>
+		<span class="tooltip"><p>Creates and returns an image object synchronously by loading the image data from the specified URL and optionally caching it.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Drawing" name="task_Drawing"></a>
+						<h3 class="subsubtitle task-title">Drawing</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/drawInRect:withContentMode:">&ndash;&nbsp;drawInRect:withContentMode:</a></code>
+		<span class="tooltip"><p>Mimicks the way images are drawn differently by UIImageView based on the set content mode.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Working with Tiles" name="task_Working with Tiles"></a>
+						<h3 class="subsubtitle task-title">Working with Tiles</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tileImageAtColumn:ofColumns:row:ofRows:">&ndash;&nbsp;tileImageAtColumn:ofColumns:row:ofRows:</a></code>
+		<span class="tooltip"><p>Cuts out a tile at the given row and column</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tileImageInClipRect:inBounds:scale:">&ndash;&nbsp;tileImageInClipRect:inBounds:scale:</a></code>
+		<span class="tooltip"><p>Cuts out a tile at the given clip rect relative to the bounds</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Modifying Images" name="task_Modifying Images"></a>
+						<h3 class="subsubtitle task-title">Modifying Images</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/imageScaledToSize:">&ndash;&nbsp;imageScaledToSize:</a></code>
+		<span class="tooltip"><p>Resizes the receiver to the given size.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/imageWithContentsOfURL:cachePolicy:error:" title="imageWithContentsOfURL:cachePolicy:error:"></a>
+	<h3 class="subsubtitle method-title">imageWithContentsOfURL:cachePolicy:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns an image object synchronously by loading the image data from the specified URL and optionally caching it.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (UIImage *)imageWithContentsOfURL:(NSURL *)<em>URL</em> cachePolicy:(NSURLRequestCachePolicy)<em>cachePolicy</em> error:(NSError **)<em>error</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The URL to load the image from</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cachePolicy</em></dt>
+			<dd><p>The cache policy to apply.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional output parameter to return an error if the loading fails</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The image object for the specified URL, or nil if the method could not load the specified image.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Useful values for cachePolicy are:</p>
+
+<ul>
+<li>NSURLRequestUseProtocolCachePolicy (default)</li>
+<li>NSURLRequestReloadIgnoringLocalCacheData</li>
+<li>NSURLRequestReturnCacheDataElseLoad</li>
+<li>NSURLRequestReturnCacheDataDontLoad</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+DTFoundation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/drawInRect:withContentMode:" title="drawInRect:withContentMode:"></a>
+	<h3 class="subsubtitle method-title">drawInRect:withContentMode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Mimicks the way images are drawn differently by UIImageView based on the set content mode.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)drawInRect:(CGRect)<em>rect</em> withContentMode:(UIViewContentMode)<em>contentMode</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>The rectangle to drawn in</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>contentMode</em></dt>
+			<dd><p>The content mode. Note that UIViewContentModeRedraw is treated the same as UIViewContentModeScaleToFill.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+DTFoundation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/imageScaledToSize:" title="imageScaledToSize:"></a>
+	<h3 class="subsubtitle method-title">imageScaledToSize:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Resizes the receiver to the given size.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UIImage *)imageScaledToSize:(CGSize)<em>newSize</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newSize</em></dt>
+			<dd><p>The target image size</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The resulting image</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+DTFoundation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tileImageAtColumn:ofColumns:row:ofRows:" title="tileImageAtColumn:ofColumns:row:ofRows:"></a>
+	<h3 class="subsubtitle method-title">tileImageAtColumn:ofColumns:row:ofRows:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cuts out a tile at the given row and column</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UIImage *)tileImageAtColumn:(NSUInteger)<em>column</em> ofColumns:(NSUInteger)<em>columns</em> row:(NSUInteger)<em>row</em> ofRows:(NSUInteger)<em>rows</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>column</em></dt>
+			<dd><p>The index of the column</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>columns</em></dt>
+			<dd><p>The total number of columns</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>row</em></dt>
+			<dd><p>The index of the row</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rows</em></dt>
+			<dd><p>The total number of rows</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The resulting image</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+DTFoundation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tileImageInClipRect:inBounds:scale:" title="tileImageInClipRect:inBounds:scale:"></a>
+	<h3 class="subsubtitle method-title">tileImageInClipRect:inBounds:scale:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cuts out a tile at the given clip rect relative to the bounds</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (UIImage *)tileImageInClipRect:(CGRect)<em>clipRect</em> inBounds:(CGRect)<em>bounds</em> scale:(CGFloat)<em>scale</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>clipRect</em></dt>
+			<dd><p>The clipping rect to extract</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bounds</em></dt>
+			<dd><p>The bounds to which the clipRect is relative to</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>scale</em></dt>
+			<dd><p>The image scale</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The resulting image</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIImage+DTFoundation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Cocoanetics. All rights reserved. (Last updated: 2012-11-25)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

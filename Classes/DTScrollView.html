@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>NSString(DTFormatNumbers) Category Reference</title>
+		<title>DTScrollView Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">NSString(DTFormatNumbers) Category Reference</h1>
+				<h1 class="hideInXcode">DTScrollView Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -32,17 +32,10 @@
 	
 	
 	
-	<option value="tasks">Tasks</option>
 	
 	
 	
 	
-	
-	
-	
-	<option value="class_methods">Class Methods</option>
-	
-	<option value="//api/name/stringByFormattingBytes:">&nbsp;&nbsp;&nbsp;&nbsp;+ stringByFormattingBytes:</option>
 	
 	
 	
@@ -60,23 +53,11 @@
 
 
 
-<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Formatting File Sizes">Formatting File Sizes</a></span></li>
-	
-</ul></li>
 
 
 
 
 
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringByFormattingBytes:">stringByFormattingBytes:</a></span></li>
-	
-</ul></li>
 
 
 
@@ -85,7 +66,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="NSString(DTFormatNumbers) Category Reference" name="top"></a>
+				<a title="DTScrollView Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -94,15 +75,18 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">NSString(DTFormatNumbers) Category Reference</h1>
+						<h1 class="title title-header">DTScrollView Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSScrollView</td>
+</tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">NSString+DTFormatNumbers.h</td>
+	<td class="specification-value">DTScrollView.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -112,32 +96,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>A collection of category extensions for <code>NSString</code> dealing with the formatting of numbers in special contexts.</p>
-					</div>
-					
-					
-					
-					
-					
-					<div class="section section-tasks">
-						<a title="Tasks" name="tasks"></a>
-						<h2 class="subtitle subtitle-tasks">Tasks</h2>
-						
-						
-						<a title="Formatting File Sizes" name="task_Formatting File Sizes"></a>
-						
-<h3 class="subsubtitle task-title">Formatting File Sizes</h3>
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/stringByFormattingBytes:">+&nbsp;stringByFormattingBytes:</a></code>
-		<span class="tooltip"><p>Formats the passed number as a byte value in a form that is pleasing to the user when displayed next to a progress bar.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
+						<p>A scroll view that forwards scroll events up the responder chain if scrolling is along an axis that no scroll bar is shown for. This is useful to have a horizontal scroll view contained in a vertical one. To enable, set usesPredominantAxisScrolling to YES and hide the scroll bar for the axis you don&rsquo;t want to support.</p>
 					</div>
 					
 					
@@ -146,65 +105,9 @@
 					
 					
 					
-					<div class="section section-methods">
-						<a title="Class Methods" name="class_methods"></a>
-						<h2 class="subtitle subtitle-methods">Class Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/stringByFormattingBytes:" title="stringByFormattingBytes:"></a>
-	<h3 class="subsubtitle method-title">stringByFormattingBytes:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Formats the passed number as a byte value in a form that is pleasing to the user when displayed next to a progress bar.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>+ (NSString *)stringByFormattingBytes:(long long)<em>bytes</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>bytes</em></dt>
-			<dd><p>The value of the bytes to be formatted</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Returns the formatted string.</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Output numbers are rounded to one decimal place. Bytes are not abbreviated because most users might not be used to B for that. Higher units are kB, MB, GB and TB.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">NSString+DTFormatNumbers.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
+					
+					
+					
 					
 					
 					

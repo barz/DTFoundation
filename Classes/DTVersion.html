@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.0.5 (build 752)" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -40,11 +40,13 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/maintenanceVersion">&nbsp;&nbsp;&nbsp;&nbsp;maintenanceVersion</option>
+	<option value="//api/name/build">&nbsp;&nbsp;&nbsp;&nbsp;build</option>
 	
-	<option value="//api/name/majorVersion">&nbsp;&nbsp;&nbsp;&nbsp;majorVersion</option>
+	<option value="//api/name/maintenance">&nbsp;&nbsp;&nbsp;&nbsp;maintenance</option>
 	
-	<option value="//api/name/minorVersion">&nbsp;&nbsp;&nbsp;&nbsp;minorVersion</option>
+	<option value="//api/name/major">&nbsp;&nbsp;&nbsp;&nbsp;major</option>
+	
+	<option value="//api/name/minor">&nbsp;&nbsp;&nbsp;&nbsp;minor</option>
 	
 	
 	
@@ -54,6 +56,10 @@
 	<option value="//api/name/appBundleVersion">&nbsp;&nbsp;&nbsp;&nbsp;+ appBundleVersion</option>
 	
 	<option value="//api/name/osVersion">&nbsp;&nbsp;&nbsp;&nbsp;+ osVersion</option>
+	
+	<option value="//api/name/osVersionIsGreaterThen:">&nbsp;&nbsp;&nbsp;&nbsp;+ osVersionIsGreaterThen:</option>
+	
+	<option value="//api/name/osVersionIsLessThen:">&nbsp;&nbsp;&nbsp;&nbsp;+ osVersionIsLessThen:</option>
 	
 	<option value="//api/name/versionWithString:">&nbsp;&nbsp;&nbsp;&nbsp;+ versionWithString:</option>
 	
@@ -66,11 +72,21 @@
 	
 	<option value="//api/name/initWithMajor:minor:maintenance:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithMajor:minor:maintenance:</option>
 	
+	<option value="//api/name/initWithMajor:minor:maintenance:build:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithMajor:minor:maintenance:build:</option>
+	
 	<option value="//api/name/isEqual:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqual:</option>
 	
 	<option value="//api/name/isEqualToString:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqualToString:</option>
 	
 	<option value="//api/name/isEqualToVersion:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqualToVersion:</option>
+	
+	<option value="//api/name/isGreaterThenVersion:">&nbsp;&nbsp;&nbsp;&nbsp;- isGreaterThenVersion:</option>
+	
+	<option value="//api/name/isGreaterThenVersionString:">&nbsp;&nbsp;&nbsp;&nbsp;- isGreaterThenVersionString:</option>
+	
+	<option value="//api/name/isLessThenVersion:">&nbsp;&nbsp;&nbsp;&nbsp;- isLessThenVersion:</option>
+	
+	<option value="//api/name/isLessThenVersionString:">&nbsp;&nbsp;&nbsp;&nbsp;- isLessThenVersionString:</option>
 	
 	
 	
@@ -88,6 +104,8 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties">Properties</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating Versions">Creating Versions</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Comparing Versions">Comparing Versions</a></span></li>
@@ -100,11 +118,13 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maintenanceVersion">maintenanceVersion</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/build">build</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/majorVersion">majorVersion</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maintenance">maintenance</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minorVersion">minorVersion</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/major">major</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minor">minor</a></span></li>
 	
 </ul></li>
 
@@ -115,6 +135,10 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appBundleVersion">appBundleVersion</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/osVersion">osVersion</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/osVersionIsGreaterThen:">osVersionIsGreaterThen:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/osVersionIsLessThen:">osVersionIsLessThen:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/versionWithString:">versionWithString:</a></span></li>
 	
@@ -128,11 +152,21 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithMajor:minor:maintenance:">initWithMajor:minor:maintenance:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithMajor:minor:maintenance:build:">initWithMajor:minor:maintenance:build:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqual:">isEqual:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqualToString:">isEqualToString:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqualToVersion:">isEqualToVersion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isGreaterThenVersion:">isGreaterThenVersion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isGreaterThenVersionString:">isGreaterThenVersionString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isLessThenVersion:">isLessThenVersion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isLessThenVersionString:">isLessThenVersionString:</a></span></li>
 	
 </ul></li>
 
@@ -171,9 +205,8 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Class that represents a version number comprised of major, minor and maintenance number separarated by dots. For example &ldquo;1.2.2&rdquo;.</p>
-
-<p>This encapsulation simplifies comparing versions against each other. Sub-numbers that are omitted on creating a <a href="DTVersion.html"><code>DTVersion</code></a> are assumed to be 0.</p>
+						<p>  Class that represents a version number comprised of <a href="#//api/name/major">major</a>, <a href="#//api/name/minor">minor</a> and <a href="#//api/name/maintenance">maintenance</a> number separarated by dots. For example &ldquo;1.2.2&rdquo;.
+  This encapsulation simplifies comparing versions against each other. Sub-numbers that are omitted on creating a <code>DTVersion</code> are assumed to be 0.</p>
 					</div>
 					
 					
@@ -185,28 +218,35 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						<a title="Properties" name="task_Properties"></a>
+						<h3 class="subsubtitle task-title">Properties</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/majorVersion">&nbsp;&nbsp;majorVersion</a></code>
-		<span class="tooltip"><p>The receiver&rsquo;s major version number.</p></span>
+		<code><a href="#//api/name/major">&nbsp;&nbsp;major</a></code>
+		<span class="tooltip"><p>The major version number</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/minorVersion">&nbsp;&nbsp;minorVersion</a></code>
-		<span class="tooltip"><p>The receiver&rsquo;s minor version number.</p></span>
+		<code><a href="#//api/name/minor">&nbsp;&nbsp;minor</a></code>
+		<span class="tooltip"><p>The minor version number</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/maintenanceVersion">&nbsp;&nbsp;maintenanceVersion</a></code>
-		<span class="tooltip"><p>The receiver&rsquo;s maintenance version number.</p></span>
+		<code><a href="#//api/name/maintenance">&nbsp;&nbsp;maintenance</a></code>
+		<span class="tooltip"><p>The maintenance/hotfix version number</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/build">&nbsp;&nbsp;build</a></code>
+		<span class="tooltip"><p>The build number</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -220,29 +260,36 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
+		<code><a href="#//api/name/initWithMajor:minor:maintenance:">&ndash;&nbsp;initWithMajor:minor:maintenance:</a></code>
+		<span class="tooltip"><p>Initializes the receiver with <a href="#//api/name/major">major</a>, <a href="#//api/name/minor">minor</a> and <a href="#//api/name/maintenance">maintenance</a> version.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithMajor:minor:maintenance:build:">&ndash;&nbsp;initWithMajor:minor:maintenance:build:</a></code>
+		<span class="tooltip"><p>Initializes the receiver with <a href="#//api/name/major">major</a>, <a href="#//api/name/minor">minor</a> and <a href="#//api/name/maintenance">maintenance</a> version.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/versionWithString:">+&nbsp;versionWithString:</a></code>
-		<span class="tooltip"><p>creates and returns a <a href="DTVersion.html"><code>DTVersion</code></a> object initialized using the provided string</p></span>
+		<span class="tooltip"><p>creates and returns a DTVersion object initialized using the provided string</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/appBundleVersion">+&nbsp;appBundleVersion</a></code>
-		<span class="tooltip"><p>creates and retuns a <a href="DTVersion.html"><code>DTVersion</code></a> object initialized with the version information of the current application</p></span>
+		<span class="tooltip"><p>creates and retuns a DTVersion object initialized with the version information of the current application</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/osVersion">+&nbsp;osVersion</a></code>
-		<span class="tooltip"><p>creates and retuns a <a href="DTVersion.html"><code>DTVersion</code></a> object initialized with the version information of the operating system</p></span>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/initWithMajor:minor:maintenance:">&ndash;&nbsp;initWithMajor:minor:maintenance:</a></code>
-		<span class="tooltip"><p>creates and returns a <a href="DTVersion.html"><code>DTVersion</code></a> object initialized using the provided string</p></span>
+		<span class="tooltip"><p>creates and retuns a DTVersion object initialized with the version information of the operating system</p></span>
 	</span>
 	
 	
@@ -256,29 +303,72 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
+		<code><a href="#//api/name/osVersionIsLessThen:">+&nbsp;osVersionIsLessThen:</a></code>
+		<span class="tooltip"><p>The OS version as <code>NSString</code> to compare the receiver to</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/osVersionIsGreaterThen:">+&nbsp;osVersionIsGreaterThen:</a></code>
+		<span class="tooltip"><p>The OS version as <code>NSString</code> to compare the receiver to</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isLessThenVersion:">&ndash;&nbsp;isLessThenVersion:</a></code>
+		<span class="tooltip"><p>The <code>DTVersion</code> to compare the receiver to</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isGreaterThenVersion:">&ndash;&nbsp;isGreaterThenVersion:</a></code>
+		<span class="tooltip"><p>The <code>DTVersion</code> to compare the receiver to</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isLessThenVersionString:">&ndash;&nbsp;isLessThenVersionString:</a></code>
+		<span class="tooltip"><p>The version as <code>NSString</code> to compare the receiver to</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isGreaterThenVersionString:">&ndash;&nbsp;isGreaterThenVersionString:</a></code>
+		<span class="tooltip"><p>The version as <code>NSString</code> to compare the receiver to
+* @returns <code>true</code> if the give version is greater then version string</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/isEqualToVersion:">&ndash;&nbsp;isEqualToVersion:</a></code>
-		<span class="tooltip"><p>Returns a Boolean value that indicates whether a given <a href="DTVersion.html"><code>DTVersion</code></a> is equal to the receiver.</p></span>
+		<span class="tooltip"><p>Compares the receiver against a passed <code>DTVersion</code> instance</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isEqualToString:">&ndash;&nbsp;isEqualToString:</a></code>
-		<span class="tooltip"><p>Returns a Boolean value that indicates whether a given string is equal to the receiver.</p></span>
+		<span class="tooltip"><p>Compares the receiver against a passed version as <code>NSString</code></p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isEqual:">&ndash;&nbsp;isEqual:</a></code>
-		<span class="tooltip"><p>Returns a Boolean value that indicates whether a given object is equal to the receiver.</p></span>
+		<span class="tooltip"><p>Compares the receiver against a passed object</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/compare:">&ndash;&nbsp;compare:</a></code>
-		<span class="tooltip"><p>Compares the receiver to object.</p></span>
+		<span class="tooltip"><p>Compares the receiver against a passed <code>DTVersion</code> instance</p></span>
 	</span>
 	
 	
@@ -296,17 +386,17 @@
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/maintenanceVersion" title="maintenanceVersion"></a>
-	<h3 class="subsubtitle method-title">maintenanceVersion</h3>
+	<a name="//api/name/build" title="build"></a>
+	<h3 class="subsubtitle method-title">build</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The receiver&rsquo;s maintenance version number.</p>
+		<p>The build number</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger maintenanceVersion</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger build</code></div>
 	
 	
 	
@@ -330,17 +420,17 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/majorVersion" title="majorVersion"></a>
-	<h3 class="subsubtitle method-title">majorVersion</h3>
+	<a name="//api/name/maintenance" title="maintenance"></a>
+	<h3 class="subsubtitle method-title">maintenance</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The receiver&rsquo;s major version number.</p>
+		<p>The maintenance/hotfix version number</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger majorVersion</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger maintenance</code></div>
 	
 	
 	
@@ -364,17 +454,51 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/minorVersion" title="minorVersion"></a>
-	<h3 class="subsubtitle method-title">minorVersion</h3>
+	<a name="//api/name/major" title="major"></a>
+	<h3 class="subsubtitle method-title">major</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The receiver&rsquo;s minor version number.</p>
+		<p>The major version number</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger minorVersion</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger major</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTVersion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minor" title="minor"></a>
+	<h3 class="subsubtitle method-title">minor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The minor version number</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger minor</code></div>
 	
 	
 	
@@ -412,7 +536,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>creates and retuns a <a href="DTVersion.html"><code>DTVersion</code></a> object initialized with the version information of the current application</p>
+		<p>creates and retuns a DTVersion object initialized with the version information of the current application</p>
 	</div>		
 	
 	
@@ -423,7 +547,7 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>A <a href="DTVersion.html"><code>DTVersion</code></a> object or <code>nil</code> if the string of the current application is not a valid version number</p>
+		<p>A DTVersion object or <code>nil</code> if the string of the current application is not a valid version number</p>
 	</div>
 	
 	
@@ -451,7 +575,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>creates and retuns a <a href="DTVersion.html"><code>DTVersion</code></a> object initialized with the version information of the operating system</p>
+		<p>creates and retuns a DTVersion object initialized with the version information of the operating system</p>
 	</div>		
 	
 	
@@ -462,7 +586,105 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>A <a href="DTVersion.html"><code>DTVersion</code></a> object or <code>nil</code> if the string of the current application is not a valid version number</p>
+		<p>A DTVersion object or <code>nil</code> if the string of the current application is not a valid version number</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTVersion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/osVersionIsGreaterThen:" title="osVersionIsGreaterThen:"></a>
+	<h3 class="subsubtitle method-title">osVersionIsGreaterThen:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The OS version as <code>NSString</code> to compare the receiver to</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (BOOL)osVersionIsGreaterThen:(NSString *)<em>versionString</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>versionString</em></dt>
+			<dd><p>The OS version as <code>NSString</code> to compare the receiver to</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>true</code> if the given version string is valid and greater then the <a href="#//api/name/osVersion">osVersion</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTVersion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/osVersionIsLessThen:" title="osVersionIsLessThen:"></a>
+	<h3 class="subsubtitle method-title">osVersionIsLessThen:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The OS version as <code>NSString</code> to compare the receiver to</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (BOOL)osVersionIsLessThen:(NSString *)<em>versionString</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>versionString</em></dt>
+			<dd><p>The OS version as <code>NSString</code> to compare the receiver to</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>true</code> if the given version string is valid and less then the <a href="#//api/name/osVersion">osVersion</a></p>
 	</div>
 	
 	
@@ -490,7 +712,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>creates and returns a <a href="DTVersion.html"><code>DTVersion</code></a> object initialized using the provided string</p>
+		<p>creates and returns a DTVersion object initialized using the provided string</p>
 	</div>		
 	
 	
@@ -502,7 +724,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>versionString</em></dt>
-			<dd><p>A string with a version number.</p></dd>
+			<dd><p>The <code>NSString</code> to create a <code>DTVersion</code> from</p></dd>
 		</dl>
 		
 	</div>
@@ -511,7 +733,7 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>A <a href="DTVersion.html"><code>DTVersion</code></a> object or <code>nil</code> if the string is not a valid version number</p>
+		<p>A DTVersion object or <code>nil</code> if the string is not a valid version number</p>
 	</div>
 	
 	
@@ -521,15 +743,6 @@
 	
 	
 	
-	
-	<div class="method-subsection see-also-section">
-		<h4 class="method-subtitle">See Also</h4>
-		<ul>
-			
-			<li><code><p><a href="#//api/name/initWithMajor:minor:maintenance:">&ndash; initWithMajor:minor:maintenance:</a></p></code></li>
-			
-		</ul>
-	</div>
 	
 	
 	
@@ -556,7 +769,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Compares the receiver to object.</p>
+		<p>Compares the receiver against a passed <code>DTVersion</code> instance</p>
 	</div>		
 	
 	
@@ -568,7 +781,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>version</em></dt>
-			<dd><p>The <a href="DTVersion.html"><code>DTVersion</code></a> instance to compare the receiver with.</p></dd>
+			<dd><p>The <code>DTVersion</code> to compare the receiver to</p></dd>
 		</dl>
 		
 	</div>
@@ -577,7 +790,7 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p><code>NSOrderedAscending</code> if the receiver precedes object in version ordering, <code>NSOrderedSame</code> if they are equal, and <code>NSOrderedDescending</code> if the receiver is higher than object.</p>
+		<p>The comparison result</p>
 	</div>
 	
 	
@@ -605,7 +818,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>creates and returns a <a href="DTVersion.html"><code>DTVersion</code></a> object initialized using the provided string</p>
+		<p>Initializes the receiver with <a href="#//api/name/major">major</a>, <a href="#//api/name/minor">minor</a> and <a href="#//api/name/maintenance">maintenance</a> version.</p>
 	</div>		
 	
 	
@@ -617,17 +830,17 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>major</em></dt>
-			<dd><p>The major version number of the version.</p></dd>
+			<dd><p>The <a href="#//api/name/major">major</a> version number</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>minor</em></dt>
-			<dd><p>The minor version number of the version.</p></dd>
+			<dd><p>The <a href="#//api/name/minor">minor</a> version number</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>maintenance</em></dt>
-			<dd><p>The maintenance version number of the version.</p></dd>
+			<dd><p>The maintainance/hotfix version number</p></dd>
 		</dl>
 		
 	</div>
@@ -636,7 +849,71 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>A <a href="DTVersion.html"><code>DTVersion</code></a> object or <code>nil</code> if the string is not a valid version number</p>
+		<p>The initialized <code>DTVersion</code></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTVersion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithMajor:minor:maintenance:build:" title="initWithMajor:minor:maintenance:build:"></a>
+	<h3 class="subsubtitle method-title">initWithMajor:minor:maintenance:build:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes the receiver with <a href="#//api/name/major">major</a>, <a href="#//api/name/minor">minor</a> and <a href="#//api/name/maintenance">maintenance</a> version.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DTVersion *)initWithMajor:(NSUInteger)<em>major</em> minor:(NSUInteger)<em>minor</em> maintenance:(NSUInteger)<em>maintenance</em> build:(NSUInteger)<em>build</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>major</em></dt>
+			<dd><p>The <a href="#//api/name/major">major</a> version number</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>minor</em></dt>
+			<dd><p>The <a href="#//api/name/minor">minor</a> version number</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>maintenance</em></dt>
+			<dd><p>The maintainance/hotfix version number</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>build</em></dt>
+			<dd><p>The <a href="#//api/name/build">build</a> number</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The initialized <code>DTVersion</code></p>
 	</div>
 	
 	
@@ -664,7 +941,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns a Boolean value that indicates whether a given object is equal to the receiver.</p>
+		<p>Compares the receiver against a passed object</p>
 	</div>		
 	
 	
@@ -676,7 +953,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>object</em></dt>
-			<dd><p>An NSString or <a href="DTVersion.html"><code>DTVersion</code></a> to compare against.</p></dd>
+			<dd><p>An object of either <code>NSString</code> or <code>DTVersion</code></p></dd>
 		</dl>
 		
 	</div>
@@ -685,17 +962,12 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p><code>YES</code> if the other object is equal to the receiver</p>
+		<p><code>YES</code> is the versions are equal</p>
 	</div>
 	
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>If the other object is an <code>NSString</code> then <a href="#//api/name/isEqualToString:">isEqualToString:</a> is called. If it is a <a href="DTVersion.html"><code>DTVersion</code></a> instance <a href="#//api/name/isEqualToVersion:">isEqualToVersion:</a> is called.</p>
-	</div>
 	
 	
 	
@@ -718,7 +990,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns a Boolean value that indicates whether a given string is equal to the receiver.</p>
+		<p>Compares the receiver against a passed version as <code>NSString</code></p>
 	</div>		
 	
 	
@@ -730,7 +1002,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>versionString</em></dt>
-			<dd><p>The string to compare the receiver against.</p></dd>
+			<dd><p>The version as <code>NSString</code> to compare the receiver to</p></dd>
 		</dl>
 		
 	</div>
@@ -739,7 +1011,7 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p><code>YES</code> if the other object is equal to the receiver</p>
+		<p><code>YES</code> is the versions are equal</p>
 	</div>
 	
 	
@@ -767,7 +1039,7 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns a Boolean value that indicates whether a given <a href="DTVersion.html"><code>DTVersion</code></a> is equal to the receiver.</p>
+		<p>Compares the receiver against a passed <code>DTVersion</code> instance</p>
 	</div>		
 	
 	
@@ -779,7 +1051,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>version</em></dt>
-			<dd><p>The <a href="DTVersion.html"><code>DTVersion</code></a> instance to compare against.</p></dd>
+			<dd><p>The <code>DTVersion</code> to compare the receiver to</p></dd>
 		</dl>
 		
 	</div>
@@ -788,7 +1060,200 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p><code>YES</code> if the other object is equal to the receiver</p>
+		<p><code>YES</code> is the versions are equal</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTVersion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isGreaterThenVersion:" title="isGreaterThenVersion:"></a>
+	<h3 class="subsubtitle method-title">isGreaterThenVersion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <code>DTVersion</code> to compare the receiver to</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)isGreaterThenVersion:(DTVersion *)<em>version</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>version</em></dt>
+			<dd><p>The <code>DTVersion</code> to compare the receiver to</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>true</code> if the give version is greater then this version</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTVersion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isGreaterThenVersionString:" title="isGreaterThenVersionString:"></a>
+	<h3 class="subsubtitle method-title">isGreaterThenVersionString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The version as <code>NSString</code> to compare the receiver to
+* @returns <code>true</code> if the give version is greater then version string</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)isGreaterThenVersionString:(NSString *)<em>versionString</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>versionString</em></dt>
+			<dd><p>The version as <code>NSString</code> to compare the receiver to
+* @returns <code>true</code> if the give version is greater then version string</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTVersion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isLessThenVersion:" title="isLessThenVersion:"></a>
+	<h3 class="subsubtitle method-title">isLessThenVersion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <code>DTVersion</code> to compare the receiver to</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)isLessThenVersion:(DTVersion *)<em>version</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>version</em></dt>
+			<dd><p>The <code>DTVersion</code> to compare the receiver to</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>true</code> if the give version is less then this version</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTVersion.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isLessThenVersionString:" title="isLessThenVersionString:"></a>
+	<h3 class="subsubtitle method-title">isLessThenVersionString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The version as <code>NSString</code> to compare the receiver to</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)isLessThenVersionString:(NSString *)<em>versionString</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>versionString</em></dt>
+			<dd><p>The version as <code>NSString</code> to compare the receiver to</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>true</code> if the give version is less then this version string</p>
 	</div>
 	
 	
@@ -822,9 +1287,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Cocoanetics. All rights reserved. (Last updated: 2012-03-06)</span><br />
+						<p><span class="copyright">&copy; 2012 Cocoanetics. All rights reserved. (Last updated: 2012-11-25)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						
 					</div>
 				</div>

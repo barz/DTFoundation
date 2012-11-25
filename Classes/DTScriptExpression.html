@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>DTAsyncFileDeleter Class Reference</title>
+		<title>DTScriptExpression Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">DTAsyncFileDeleter Class Reference</h1>
+				<h1 class="hideInXcode">DTScriptExpression Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -38,22 +38,29 @@
 	
 	
 	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/parameters">&nbsp;&nbsp;&nbsp;&nbsp;parameters</option>
+	
+	<option value="//api/name/receiver">&nbsp;&nbsp;&nbsp;&nbsp;receiver</option>
+	
+	
 	
 	
 	<option value="class_methods">Class Methods</option>
 	
-	<option value="//api/name/sharedInstance">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedInstance</option>
+	<option value="//api/name/scriptExpressionWithString:">&nbsp;&nbsp;&nbsp;&nbsp;+ scriptExpressionWithString:</option>
 	
 	
 	
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/removeItemAtPath:">&nbsp;&nbsp;&nbsp;&nbsp;- removeItemAtPath:</option>
+	<option value="//api/name/enumerateParametersWithBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- enumerateParametersWithBlock:</option>
 	
-	<option value="//api/name/removeItemAtURL:">&nbsp;&nbsp;&nbsp;&nbsp;- removeItemAtURL:</option>
+	<option value="//api/name/initWithString:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithString:</option>
 	
-	<option value="//api/name/waitUntilFinished">&nbsp;&nbsp;&nbsp;&nbsp;- waitUntilFinished</option>
+	<option value="//api/name/selector">&nbsp;&nbsp;&nbsp;&nbsp;- selector</option>
 	
 	
 	
@@ -71,21 +78,25 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating A File Deleter">Creating A File Deleter</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Asynchronous Operations">Asynchronous Operations</a></span></li>
-	
 </ul></li>
 
 
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parameters">parameters</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/receiver">receiver</a></span></li>
+	
+</ul></li>
+
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedInstance">sharedInstance</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scriptExpressionWithString:">scriptExpressionWithString:</a></span></li>
 	
 </ul></li>
 
@@ -93,11 +104,11 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeItemAtPath:">removeItemAtPath:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enumerateParametersWithBlock:">enumerateParametersWithBlock:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeItemAtURL:">removeItemAtURL:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithString:">initWithString:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/waitUntilFinished">waitUntilFinished</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selector">selector</a></span></li>
 	
 </ul></li>
 
@@ -106,7 +117,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="DTAsyncFileDeleter Class Reference" name="top"></a>
+				<a title="DTScriptExpression Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -115,7 +126,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">DTAsyncFileDeleter Class Reference</h1>
+						<h1 class="title title-header">DTScriptExpression Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -126,7 +137,7 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">DTAsyncFileDeleter.h</td>
+	<td class="specification-value">DTScriptExpression.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -136,7 +147,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>This class deletes large amounts of files asynchronously. You should use the <a href="#//api/name/sharedInstance">sharedInstance</a> to get an instance. This class automatically starts a background task if the app is suspended so that file deletion can complete.</p>
+						<p>Instances of this class represent a single Objective-C script expression</p>
 					</div>
 					
 					
@@ -148,43 +159,49 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						<a title="Creating A File Deleter" name="task_Creating A File Deleter"></a>
-						<h3 class="subsubtitle task-title">Creating A File Deleter</h3>
+						
+						
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
-		<span class="tooltip"><p>Creates a shared file deleter.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						<a title="Asynchronous Operations" name="task_Asynchronous Operations"></a>
-						<h3 class="subsubtitle task-title">Asynchronous Operations</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/waitUntilFinished">&ndash;&nbsp;waitUntilFinished</a></code>
-		<span class="tooltip"><p>Blocks execution of the current thread until the receiver finishes.</p></span>
+		<code><a href="#//api/name/scriptExpressionWithString:">+&nbsp;scriptExpressionWithString:</a></code>
+		<span class="tooltip"><p>Creates a script expression from an <code>NSString</code></p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/removeItemAtPath:">&ndash;&nbsp;removeItemAtPath:</a></code>
-		<span class="tooltip"><p>Removes the file or directory at the specified path and immediately returns.</p></span>
+		<code><a href="#//api/name/initWithString:">&ndash;&nbsp;initWithString:</a></code>
+		<span class="tooltip"><p>Creates a script expression from an <code>NSString</code></p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/removeItemAtURL:">&ndash;&nbsp;removeItemAtURL:</a></code>
-		<span class="tooltip"><p>Removes the file or directory at the specified URL.</p></span>
+		<code><a href="#//api/name/parameters">&nbsp;&nbsp;parameters</a></code>
+		<span class="tooltip"><p>The parameters of the script expression</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enumerateParametersWithBlock:">&ndash;&nbsp;enumerateParametersWithBlock:</a></code>
+		<span class="tooltip"><p>Enumerates the script <a href="#//api/name/parameters">parameters</a> and executes the block for each parameter.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/receiver">&nbsp;&nbsp;receiver</a></code>
+		<span class="tooltip"><p>Accesses the receiver of the expression</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selector">&ndash;&nbsp;selector</a></code>
+		<span class="tooltip"><p>The method selector</p></span>
 	</span>
 	
 	
@@ -197,24 +214,22 @@
 					
 					
 					
-					
-					
 					<div class="section section-methods">
-						<a title="Class Methods" name="class_methods"></a>
-						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
-	<h3 class="subsubtitle method-title">sharedInstance</h3>
+	<a name="//api/name/parameters" title="parameters"></a>
+	<h3 class="subsubtitle method-title">parameters</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Creates a shared file deleter.</p>
+		<p>The parameters of the script expression</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>+ (DTAsyncFileDeleter *)sharedInstance</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *parameters</code></div>
 	
 	
 	
@@ -231,7 +246,93 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">DTAsyncFileDeleter.h</code><br />
+		<code class="declared-in-ref">DTScriptExpression.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/receiver" title="receiver"></a>
+	<h3 class="subsubtitle method-title">receiver</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Accesses the receiver of the expression</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) DTScriptVariable *receiver</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTScriptExpression.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/scriptExpressionWithString:" title="scriptExpressionWithString:"></a>
+	<h3 class="subsubtitle method-title">scriptExpressionWithString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a script expression from an <code>NSString</code></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (DTScriptExpression *)scriptExpressionWithString:(NSString *)<em>string</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>A string representing an Object-C command including square brackets.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DTScriptExpression.h</code><br />
 	</div>				
 	
 	
@@ -246,25 +347,25 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/removeItemAtPath:" title="removeItemAtPath:"></a>
-	<h3 class="subsubtitle method-title">removeItemAtPath:</h3>
+	<a name="//api/name/enumerateParametersWithBlock:" title="enumerateParametersWithBlock:"></a>
+	<h3 class="subsubtitle method-title">enumerateParametersWithBlock:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Removes the file or directory at the specified path and immediately returns.</p>
+		<p>Enumerates the script <a href="#//api/name/parameters">parameters</a> and executes the block for each parameter.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)removeItemAtPath:(NSString *)<em>path</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)enumerateParametersWithBlock:(DTScriptExpressionParameterEnumerationBlock)<em>block</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>path</em></dt>
-			<dd><p>A path string indicating the file or directory to remove. If the path specifies a directory, the contents of that directory are recursively removed.</p></dd>
+			<dt><em>block</em></dt>
+			<dd><p>The block to be executed for each parameter</p></dd>
 		</dl>
 		
 	</div>
@@ -275,11 +376,6 @@
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>This method moves the given item to a temporary name which is an instant operation. It then schedules an asynchronous background operation to actually remove the item.</p>
-	</div>
-	
 	
 	
 	
@@ -288,32 +384,32 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">DTAsyncFileDeleter.h</code><br />
+		<code class="declared-in-ref">DTScriptExpression.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/removeItemAtURL:" title="removeItemAtURL:"></a>
-	<h3 class="subsubtitle method-title">removeItemAtURL:</h3>
+	<a name="//api/name/initWithString:" title="initWithString:"></a>
+	<h3 class="subsubtitle method-title">initWithString:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Removes the file or directory at the specified URL.</p>
+		<p>Creates a script expression from an <code>NSString</code></p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)removeItemAtURL:(NSURL *)<em>URL</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)initWithString:(NSString *)<em>string</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>URL</em></dt>
-			<dd><p>A file URL specifying the file or directory to remove. If the URL specifies a directory, the contents of that directory are recursively removed.</p></dd>
+			<dt><em>string</em></dt>
+			<dd><p>A string representing an Object-C command including square brackets.</p></dd>
 		</dl>
 		
 	</div>
@@ -324,11 +420,6 @@
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>This method moves the given item to a temporary name which is an instant operation. It then schedules an asynchronous background operation to actually remove the item.</p>
-	</div>
-	
 	
 	
 	
@@ -337,24 +428,24 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">DTAsyncFileDeleter.h</code><br />
+		<code class="declared-in-ref">DTScriptExpression.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/waitUntilFinished" title="waitUntilFinished"></a>
-	<h3 class="subsubtitle method-title">waitUntilFinished</h3>
+	<a name="//api/name/selector" title="selector"></a>
+	<h3 class="subsubtitle method-title">selector</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Blocks execution of the current thread until the receiver finishes.</p>
+		<p>The method selector</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)waitUntilFinished</code></div>
+	<div class="method-subsection method-declaration"><code>- (SEL)selector</code></div>
 	
 	
 	
@@ -371,7 +462,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">DTAsyncFileDeleter.h</code><br />
+		<code class="declared-in-ref">DTScriptExpression.h</code><br />
 	</div>				
 	
 	

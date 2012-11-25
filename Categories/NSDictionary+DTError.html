@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>NSURL(DTAppLinks) Category Reference</title>
+		<title>NSDictionary(DTError) Category Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">NSURL(DTAppLinks) Category Reference</h1>
+				<h1 class="hideInXcode">NSDictionary(DTError) Category Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -42,9 +42,11 @@
 	
 	<option value="class_methods">Class Methods</option>
 	
-	<option value="//api/name/appStoreReviewURLForApplicationIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;+ appStoreReviewURLForApplicationIdentifier:</option>
+	<option value="//api/name/dictionaryWithContentsOfData:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ dictionaryWithContentsOfData:error:</option>
 	
-	<option value="//api/name/appStoreURLforApplicationIdentifier:">&nbsp;&nbsp;&nbsp;&nbsp;+ appStoreURLforApplicationIdentifier:</option>
+	<option value="//api/name/dictionaryWithContentsOfFile:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ dictionaryWithContentsOfFile:error:</option>
+	
+	<option value="//api/name/dictionaryWithContentsOfURL:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ dictionaryWithContentsOfURL:error:</option>
 	
 	
 	
@@ -64,7 +66,7 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Mobile App Store Pages">Mobile App Store Pages</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Property List Error Handling">Property List Error Handling</a></span></li>
 	
 </ul></li>
 
@@ -76,9 +78,11 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appStoreReviewURLForApplicationIdentifier:">appStoreReviewURLForApplicationIdentifier:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dictionaryWithContentsOfData:error:">dictionaryWithContentsOfData:error:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appStoreURLforApplicationIdentifier:">appStoreURLforApplicationIdentifier:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dictionaryWithContentsOfFile:error:">dictionaryWithContentsOfFile:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dictionaryWithContentsOfURL:error:">dictionaryWithContentsOfURL:error:</a></span></li>
 	
 </ul></li>
 
@@ -89,7 +93,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="NSURL(DTAppLinks) Category Reference" name="top"></a>
+				<a title="NSDictionary(DTError) Category Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -98,7 +102,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">NSURL(DTAppLinks) Category Reference</h1>
+						<h1 class="title title-header">NSDictionary(DTError) Category Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -106,7 +110,7 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">NSURL+DTAppLinks.h</td>
+	<td class="specification-value">NSDictionary+DTError.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -116,13 +120,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>A collection of category extensions for <code>NSURL</code> that provide direct access to built-in app capabilites.</p>
-
-<p>For example: Open the app store on the page for the app</p>
-
-<pre><code>NSURL *appURL = [NSURL appStoreURLforApplicationIdentifier:@"463623298"];
-[[UIApplication sharedApplication] openURL:appURL];
-</code></pre>
+						<p>A collection of useful additions for <code>NSDictionary</code> to deal Property Lists and also to get error handling for malformed data.</p>
 					</div>
 					
 					
@@ -134,21 +132,28 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						<a title="Mobile App Store Pages" name="task_Mobile App Store Pages"></a>
+						<a title="Property List Error Handling" name="task_Property List Error Handling"></a>
 						
-<h3 class="subsubtitle task-title">Mobile App Store Pages</h3>
+<h3 class="subsubtitle task-title">Property List Error Handling</h3>
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/appStoreURLforApplicationIdentifier:">+&nbsp;appStoreURLforApplicationIdentifier:</a></code>
-		<span class="tooltip"><p>Returns the URL to open the mobile app store on the app&rsquo;s page.</p></span>
+		<code><a href="#//api/name/dictionaryWithContentsOfURL:error:">+&nbsp;dictionaryWithContentsOfURL:error:</a></code>
+		<span class="tooltip"><p>Creates and returns a dictionary using the keys and values found in a file specified by a given URL.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/appStoreReviewURLForApplicationIdentifier:">+&nbsp;appStoreReviewURLForApplicationIdentifier:</a></code>
-		<span class="tooltip"><p>Returns the URL to open the mobile app store on the app&rsquo;s review page.</p></span>
+		<code><a href="#//api/name/dictionaryWithContentsOfFile:error:">+&nbsp;dictionaryWithContentsOfFile:error:</a></code>
+		<span class="tooltip"><p>Creates and returns a dictionary using the keys and values found in a file specified by a given path.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dictionaryWithContentsOfData:error:">+&nbsp;dictionaryWithContentsOfData:error:</a></code>
+		<span class="tooltip"><p>Creates and returns a dictionary using the keys and values found in the given data.</p></span>
 	</span>
 	
 	
@@ -168,25 +173,30 @@
 						<h2 class="subtitle subtitle-methods">Class Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/appStoreReviewURLForApplicationIdentifier:" title="appStoreReviewURLForApplicationIdentifier:"></a>
-	<h3 class="subsubtitle method-title">appStoreReviewURLForApplicationIdentifier:</h3>
+	<a name="//api/name/dictionaryWithContentsOfData:error:" title="dictionaryWithContentsOfData:error:"></a>
+	<h3 class="subsubtitle method-title">dictionaryWithContentsOfData:error:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the URL to open the mobile app store on the app&rsquo;s review page.</p>
+		<p>Creates and returns a dictionary using the keys and values found in the given data.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>+ (NSURL *)appStoreReviewURLForApplicationIdentifier:(NSString *)<em>identifier</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (NSDictionary *)dictionaryWithContentsOfData:(NSData *)<em>data</em> error:(NSError **)<em>error</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>identifier</em></dt>
-			<dd><p>The application identifier that gets assigned to a new app when you add it to iTunes Connect.</p></dd>
+			<dt><em>data</em></dt>
+			<dd><p>The data object identified by data must contain a string representation of a property list whose root object is a dictionary.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>If an error occurs, upon returns contains an NSError object that describes the problem. If you are not interested in possible errors, pass in <code>NULL</code>.</p></dd>
 		</dl>
 		
 	</div>
@@ -195,17 +205,12 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Returns the URL to the direct app store link</p>
+		<p>A new dictionary that contains the dictionary at path, or <code>nil</code> if there is a file error or if the contents of the file are an invalid representation of a dictionary.</p>
 	</div>
 	
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The reviews page is a sub-page of the normal app landing page you get with <a href="#//api/name/appStoreURLforApplicationIdentifier:">appStoreURLforApplicationIdentifier:</a></p>
-	</div>
 	
 	
 	
@@ -215,32 +220,37 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">NSURL+DTAppLinks.h</code><br />
+		<code class="declared-in-ref">NSDictionary+DTError.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/appStoreURLforApplicationIdentifier:" title="appStoreURLforApplicationIdentifier:"></a>
-	<h3 class="subsubtitle method-title">appStoreURLforApplicationIdentifier:</h3>
+	<a name="//api/name/dictionaryWithContentsOfFile:error:" title="dictionaryWithContentsOfFile:error:"></a>
+	<h3 class="subsubtitle method-title">dictionaryWithContentsOfFile:error:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns the URL to open the mobile app store on the app&rsquo;s page.</p>
+		<p>Creates and returns a dictionary using the keys and values found in a file specified by a given path.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>+ (NSURL *)appStoreURLforApplicationIdentifier:(NSString *)<em>identifier</em></code></div>
+	<div class="method-subsection method-declaration"><code>+ (NSDictionary *)dictionaryWithContentsOfFile:(NSString *)<em>path</em> error:(NSError **)<em>error</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>identifier</em></dt>
-			<dd><p>The application identifier that gets assigned to a new app when you add it to iTunes Connect.</p></dd>
+			<dt><em>path</em></dt>
+			<dd><p>A full or relative pathname. The file identified by path must contain a string representation of a property list whose root object is a dictionary.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>If an error occurs, upon returns contains an NSError object that describes the problem. If you are not interested in possible errors, pass in <code>NULL</code>.</p></dd>
 		</dl>
 		
 	</div>
@@ -249,7 +259,7 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Returns the URL to the direct app store link</p>
+		<p>A new dictionary that contains the dictionary at path, or <code>nil</code> if there is a file error or if the contents of the file are an invalid representation of a dictionary.</p>
 	</div>
 	
 	
@@ -264,7 +274,61 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">NSURL+DTAppLinks.h</code><br />
+		<code class="declared-in-ref">NSDictionary+DTError.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dictionaryWithContentsOfURL:error:" title="dictionaryWithContentsOfURL:error:"></a>
+	<h3 class="subsubtitle method-title">dictionaryWithContentsOfURL:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a dictionary using the keys and values found in a file specified by a given URL.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (NSDictionary *)dictionaryWithContentsOfURL:(NSURL *)<em>URL</em> error:(NSError **)<em>error</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>An URL. The file identified by URL must contain a string representation of a property list whose root object is a dictionary.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>If an error occurs, upon returns contains an NSError object that describes the problem. If you are not interested in possible errors, pass in <code>NULL</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new dictionary that contains the dictionary at path, or <code>nil</code> if there is a file error or if the contents of the file are an invalid representation of a dictionary.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDictionary+DTError.h</code><br />
 	</div>				
 	
 	

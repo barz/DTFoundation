@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>DTZipArchive Class Reference</title>
+		<title>DTActivityTitleView Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">DTZipArchive Class Reference</h1>
+				<h1 class="hideInXcode">DTActivityTitleView Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -38,15 +38,15 @@
 	
 	
 	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/busy">&nbsp;&nbsp;&nbsp;&nbsp;busy</option>
+	
+	<option value="//api/name/title">&nbsp;&nbsp;&nbsp;&nbsp;title</option>
 	
 	
 	
 	
-	<option value="instance_methods">Instance Methods</option>
-	
-	<option value="//api/name/enumerateUncompressedFilesAsDataUsingBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- enumerateUncompressedFilesAsDataUsingBlock:</option>
-	
-	<option value="//api/name/initWithFileAtPath:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithFileAtPath:</option>
 	
 	
 	
@@ -64,32 +64,30 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating A Zip Archive">Creating A Zip Archive</a></span></li>
-	
 </ul></li>
 
 
 
 
 
-
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enumerateUncompressedFilesAsDataUsingBlock:">enumerateUncompressedFilesAsDataUsingBlock:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/busy">busy</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithFileAtPath:">initWithFileAtPath:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/title">title</a></span></li>
 	
 </ul></li>
+
+
+
+
 
 
 			</ul>
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="DTZipArchive Class Reference" name="top"></a>
+				<a title="DTActivityTitleView Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -98,7 +96,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">DTZipArchive Class Reference</h1>
+						<h1 class="title title-header">DTActivityTitleView Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -106,10 +104,10 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">NSObject</td>
+	<td class="specification-value">UIView</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">DTZipArchive.h</td>
+	<td class="specification-value">DTActivityTitleView.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -119,9 +117,8 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>This class represents a compressed file in GZIP or PKZIP format. The used format is auto-detected.</p>
-
-<p>Dependencies: minizip (in Core/Source/Externals), libz.dylib</p>
+						<p>Alternative view for showing titles with a configurable activity indicator
+instead of default <a href="#//api/name/title">title</a> view in navigationItem</p>
 					</div>
 					
 					
@@ -133,23 +130,24 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						<a title="Creating A Zip Archive" name="task_Creating A Zip Archive"></a>
 						
-<h3 class="subsubtitle task-title">Creating A Zip Archive</h3>
+						
+
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initWithFileAtPath:">&ndash;&nbsp;initWithFileAtPath:</a></code>
-		<span class="tooltip"><p>Creates an instance of DTZipArchive in preparation for enumerating its contents.</p></span>
+		<code><a href="#//api/name/title">&nbsp;&nbsp;title</a></code>
+		<span class="tooltip"><p>Title that is shown</p></span>
 	</span>
-	
+	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/enumerateUncompressedFilesAsDataUsingBlock:">&ndash;&nbsp;enumerateUncompressedFilesAsDataUsingBlock:</a></code>
-		<span class="tooltip"><p>Enumerates through the files contained in the archive.</p></span>
+		<code><a href="#//api/name/busy">&nbsp;&nbsp;busy</a></code>
+		<span class="tooltip"><p>When busy is set to YES the activity indicator starts spinning
+When set to NO the activity indicator stops spinning</p></span>
 	</span>
-	
+	<span class="task-item-suffix">property</span>
 	
 </li>
 						</ul>
@@ -160,37 +158,23 @@
 					
 					
 					
-					
-					
-					
-					
 					<div class="section section-methods">
-						<a title="Instance Methods" name="instance_methods"></a>
-						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/enumerateUncompressedFilesAsDataUsingBlock:" title="enumerateUncompressedFilesAsDataUsingBlock:"></a>
-	<h3 class="subsubtitle method-title">enumerateUncompressedFilesAsDataUsingBlock:</h3>
+	<a name="//api/name/busy" title="busy"></a>
+	<h3 class="subsubtitle method-title">busy</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Enumerates through the files contained in the archive.</p>
+		<p>When busy is set to YES the activity indicator starts spinning
+When set to NO the activity indicator stops spinning</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)enumerateUncompressedFilesAsDataUsingBlock:(DTZipArchiveEnumerationResultsBlock)<em>enumerationBlock</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>enumerationBlock</em></dt>
-			<dd><p>An enumeration block that gets executed for each found and decompressed file</p></dd>
-		</dl>
-		
-	</div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL busy</code></div>
 	
 	
 	
@@ -198,10 +182,6 @@
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>If stop is set to <code>YES</code> in the enumeration block then the enumeration stops. Note that this parameter is ignored for GZip files since those only contain a single file.</p>
-	</div>
 	
 	
 	
@@ -211,51 +191,31 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">DTZipArchive.h</code><br />
+		<code class="declared-in-ref">DTActivityTitleView.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/initWithFileAtPath:" title="initWithFileAtPath:"></a>
-	<h3 class="subsubtitle method-title">initWithFileAtPath:</h3>
+	<a name="//api/name/title" title="title"></a>
+	<h3 class="subsubtitle method-title">title</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Creates an instance of DTZipArchive in preparation for enumerating its contents.</p>
+		<p>Title that is shown</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (id)initWithFileAtPath:(NSString *)<em>path</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>path</em></dt>
-			<dd><p>A Path to a compressed file</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>An instance of DTZipArchive or <code>nil</code> if an error occured</p>
-	</div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *title</code></div>
 	
 	
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Uses the <a href="http://www.winimage.com/zLibDll/minizip.html">minizip</a> wrapper for zlib to deal with PKZip-format files.</p>
-	</div>
+	
+	
 	
 	
 	
@@ -265,13 +225,17 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">DTZipArchive.h</code><br />
+		<code class="declared-in-ref">DTActivityTitleView.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 					</div>
+					
+					
+					
+					
 					
 					
 				</div>

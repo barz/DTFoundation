@@ -5,7 +5,7 @@
 		<title>DTFoundation Reference</title>
 		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.0.5 (build 752)" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -43,20 +43,39 @@
 <p>Contained are several category methods</p>
 
 <ul>
+<li>NSArray+DTError &ndash; parsing array property lists with error reporting</li>
+<li>NSData+Base64 &ndash; Matt Gallagher&rsquo;s base64 methods</li>
+<li>NSData+DTCrypto &ndash; Cryptography methods for NSData</li>
+<li>NSDictionary+DTError &ndash; parsing dictionary property lists with error reporting</li>
+<li>NSMutableArray+DTMoving &ndash; moving multiple array elements to a new location</li>
+<li>NSObject+DTRuntime &ndash; runtime hacking methods</li>
 <li>NSString+DTFormatNumbers &ndash; formatting Numbers</li>
+<li>NSString+DTUtilities &ndash; various utility methods for strings</li>
 <li>NSString+DTPaths &ndash; working with paths</li>
-<li>NSURL+DTPrefLinks &ndash; getting direct-access URLs for preferences</li>
+<li>NSString+DTURLEncoding &ndash; URL encoding methods</li>
+<li>NSString+DTUTI &ndash; string utility methods using UTIs</li>
+<li>NSURL+DTUnshorten &ndash; unshorting of NSURLs</li>
 <li>NSURL+DTAppLinks &ndash; getting direct-access URLs for an app&rsquo;s app store and review page</li>
+<li>UIImage+DTFoundation &ndash; helpful methods for drawing images</li>
+<li>UIView+DTFoundation &ndash; helpful methods for working with views</li>
 </ul>
 
 
 <p>Other classes simplify working with specialized data</p>
 
 <ul>
+<li><a href="Classes/DTActionSheet.html">DTActionSheet</a> &ndash; block-based additions for UIActionSheet</li>
 <li><a href="Classes/DTASN1Parser.html">DTASN1Parser</a> &ndash; a parser for ASN.1-encoded data (eg. Certificates)</li>
 <li><a href="Classes/DTAsyncFileDeleter.html">DTAsyncFileDeleter</a> &ndash; asynchronous non-blocking file/folder deletion</li>
-<li><a href="Classes/DTExtendedFileAttributes.html">DTExtendedFileAttributes</a> &ndash; reading/writing extended file attributes</li>
+<li>DTBonjour &ndash; communicating over WiFi and Bonjour</li>
+<li><a href="Classes/DTDownload.html">DTDownload</a> &ndash; asynchronous file download with optional resume</li>
+<li><a href="Classes/DTDownloadCache.html">DTDownloadCache</a> &ndash; A file and image cache using <a href="Classes/DTDownload.html">DTDownload</a> for downloading</li>
+<li><a href="Classes/DTExtendedFileAttributes.html">DTExtendedFileAttributes</a> &ndash; access and modify extended file attributes</li>
 <li><a href="Classes/DTHTMLParser.html">DTHTMLParser</a> &ndash; a libxml2-based HTML parser</li>
+<li><a href="Classes/DTPDFDocument.html">DTPDFDocument</a> &ndash; simplified wrapper to work with PDF documents</li>
+<li><a href="Classes/DTPieProgressIndicator.html">DTPieProgressIndicator</a> &ndash; pie-shaped progress indicator</li>
+<li>DTScripting &ndash; things to work with Objective-C script</li>
+<li><a href="Classes/DTSmartPagingScrollView.html">DTSmartPagingScrollView</a> &ndash; a page-based scroll view</li>
 <li><a href="Classes/DTVersion.html">DTVersion</a> &ndash; parsing and comparing version numbers</li>
 <li><a href="Classes/DTZipArchive.html">DTZipArchive</a> &ndash; uncompressing ZIP and GZ files</li>
 </ul>
@@ -92,11 +111,43 @@
 							
 							<li><a href="Classes/DTASN1Parser.html">DTASN1Parser</a></li>
 							
+							<li><a href="Classes/DTActionSheet.html">DTActionSheet</a></li>
+							
+							<li><a href="Classes/DTActivityTitleView.html">DTActivityTitleView</a></li>
+							
+							<li><a href="Classes/DTAlertView.html">DTAlertView</a></li>
+							
 							<li><a href="Classes/DTAsyncFileDeleter.html">DTAsyncFileDeleter</a></li>
+							
+							<li><a href="Classes/DTBonjourDataChunk.html">DTBonjourDataChunk</a></li>
+							
+							<li><a href="Classes/DTBonjourDataConnection.html">DTBonjourDataConnection</a></li>
+							
+							<li><a href="Classes/DTBonjourServer.html">DTBonjourServer</a></li>
+							
+							<li><a href="Classes/DTCachedFile.html">DTCachedFile</a></li>
+							
+							<li><a href="Classes/DTDownload.html">DTDownload</a></li>
+							
+							<li><a href="Classes/DTDownloadCache.html">DTDownloadCache</a></li>
 							
 							<li><a href="Classes/DTExtendedFileAttributes.html">DTExtendedFileAttributes</a></li>
 							
 							<li><a href="Classes/DTHTMLParser.html">DTHTMLParser</a></li>
+							
+							<li><a href="Classes/DTPDFDocument.html">DTPDFDocument</a></li>
+							
+							<li><a href="Classes/DTPDFPage.html">DTPDFPage</a></li>
+							
+							<li><a href="Classes/DTPieProgressIndicator.html">DTPieProgressIndicator</a></li>
+							
+							<li><a href="Classes/DTScriptExpression.html">DTScriptExpression</a></li>
+							
+							<li><a href="Classes/DTScriptVariable.html">DTScriptVariable</a></li>
+							
+							<li><a href="Classes/DTScrollView.html">DTScrollView</a></li>
+							
+							<li><a href="Classes/DTSmartPagingScrollView.html">DTSmartPagingScrollView</a></li>
 							
 							<li><a href="Classes/DTVersion.html">DTVersion</a></li>
 							
@@ -114,7 +165,15 @@
 							
 							<li><a href="Protocols/DTASN1ParserDelegate.html">DTASN1ParserDelegate</a></li>
 							
+							<li><a href="Protocols/DTBonjourDataConnectionDelegate.html">DTBonjourDataConnectionDelegate</a></li>
+							
+							<li><a href="Protocols/DTBonjourServerDelegate.html">DTBonjourServerDelegate</a></li>
+							
+							<li><a href="Protocols/DTDownloadDelegate.html">DTDownloadDelegate</a></li>
+							
 							<li><a href="Protocols/DTHTMLParserDelegate.html">DTHTMLParserDelegate</a></li>
+							
+							<li><a href="Protocols/DTSmartPagingScrollViewDatasource.html">DTSmartPagingScrollViewDatasource</a></li>
 							
 						</ul>
 						
@@ -122,15 +181,59 @@
 						<h2 class="index-title">Category References</h2>
 						<ul>
 							
+							<li><a href="Categories/NSArray+DTError.html">NSArray(DTError)</a></li>
+							
+							<li><a href="Categories/NSData+DTBase64.html">NSData(DTBase64)</a></li>
+							
+							<li><a href="Categories/NSData+DTCrypto.html">NSData(DTCrypto)</a></li>
+							
+							<li><a href="Categories/NSDictionary+DTError.html">NSDictionary(DTError)</a></li>
+							
+							<li><a href="Categories/NSDocument+DTFoundation.html">NSDocument(DTFoundation)</a></li>
+							
+							<li><a href="Categories/NSFileWrapper+DTCopying.html">NSFileWrapper(DTCopying)</a></li>
+							
+							<li><a href="Categories/NSImage+DTUtilities.html">NSImage(DTUtilities)</a></li>
+							
+							<li><a href="Categories/NSMutableArray+DTMoving.html">NSMutableArray(DTMoving)</a></li>
+							
+							<li><a href="Categories/NSObject+DTRuntime.html">NSObject(DTRuntime)</a></li>
+							
+							<li><a href="Categories/NSScanner+DTBonjour.html">NSScanner(DTBonjour)</a></li>
+							
+							<li><a href="Categories/NSScanner+DTScripting.html">NSScanner(DTScripting)</a></li>
+							
 							<li><a href="Categories/NSString+DTFormatNumbers.html">NSString(DTFormatNumbers)</a></li>
 							
 							<li><a href="Categories/NSString+DTPaths.html">NSString(DTPaths)</a></li>
 							
+							<li><a href="Categories/NSString+DTURLEncoding.html">NSString(DTURLEncoding)</a></li>
+							
+							<li><a href="Categories/NSString+DTUTI.html">NSString(DTUTI)</a></li>
+							
+							<li><a href="Categories/NSString+DTUtilities.html">NSString(DTUtilities)</a></li>
+							
 							<li><a href="Categories/NSURL+DTAppLinks.html">NSURL(DTAppLinks)</a></li>
+							
+							<li><a href="Categories/NSURL+DTComparing.html">NSURL(DTComparing)</a></li>
 							
 							<li><a href="Categories/NSURL+DTPrefLinks.html">NSURL(DTPrefLinks)</a></li>
 							
+							<li><a href="Categories/NSURL+DTUnshorten.html">NSURL(DTUnshorten)</a></li>
+							
+							<li><a href="Categories/NSView+DTAutoLayout.html">NSView(DTAutoLayout)</a></li>
+							
+							<li><a href="Categories/NSWindowController+DTPanelControllerPresenting.html">NSWindowController(DTPanelControllerPresenting)</a></li>
+							
+							<li><a href="Categories/UIApplication+DTNetworkActivity.html">UIApplication(DTNetworkActivity)</a></li>
+							
+							<li><a href="Categories/UIImage+DTFoundation.html">UIImage(DTFoundation)</a></li>
+							
+							<li><a href="Categories/UIView+DTActionHandlers.html">UIView(DTActionHandlers)</a></li>
+							
 							<li><a href="Categories/UIView+DTFoundation.html">UIView(DTFoundation)</a></li>
+							
+							<li><a href="Categories/UIWebView+DTFoundation.html">UIWebView(DTFoundation)</a></li>
 							
 						</ul>
 						
@@ -143,9 +246,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Cocoanetics. All rights reserved. (Last updated: 2012-03-06)</span><br />
+						<p><span class="copyright">&copy; 2012 Cocoanetics. All rights reserved. (Last updated: 2012-11-25)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						
 	
 					</div>
